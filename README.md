@@ -17,7 +17,7 @@ My current codewars rank:
 To run Go tests, initialize the module from the root directory:
 
 ```bash
-go mod init github.com/arsen-hovhannisyan/codewars
+go mod init github.com/freedom-shelby/codewars
 ```
 
 Then you can run tests in any kata folder:
