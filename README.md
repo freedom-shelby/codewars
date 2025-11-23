@@ -24,5 +24,6 @@ Then you can run tests in any kata folder:
 
 ```bash
 cd 8kyu/even_or_odd
-go test
+go test              # Runs default solution (main.go)
+go test -tags v2     # Runs alternative solution (solution2.go)
 ```

@@ -21,5 +21,6 @@ Create a function that takes an integer as an argument and returns "Even" for ev
 ## How to Run Tests
 
 ```bash
-go test
+go test              # Runs default solution (main.go)
+go test -tags v2     # Runs alternative solution (solution2.go)
 ```
