@@ -27,3 +27,13 @@ cd 8kyu/even_or_odd
 go test              # Runs default solution (main.go)
 go test -tags v2     # Runs alternative solution (solution2.go)
 ```
+
+### Build Tags Explained
+
+The build tags at the top of files (e.g., `//go:build !v2`) are essential for the testing system:
+
+- `main.go` uses `//go:build !v2` to exclude it when running with `-tags v2`
+- `solution2.go` uses `//go:build v2` to include it only when running with `-tags v2`
+- Without these tags, Go would try to compile both files together, causing duplicate function definition errors
+
+**Important:** Do not remove the build tag comments - they enable switching between different solution implementations.

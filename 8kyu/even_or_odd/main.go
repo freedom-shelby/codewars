@@ -1,3 +1,6 @@
+//go:build !v2
+// +build !v2
+
 package even_or_odd
 
 // IsEven returns true if the given number is even, false otherwise.
